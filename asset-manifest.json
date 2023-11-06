@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/sports-cars/static/css/main.7acaea2f.css",
+    "main.js": "/sports-cars/static/js/main.07d3183d.js",
+    "index.html": "/sports-cars/index.html",
+    "main.7acaea2f.css.map": "/sports-cars/static/css/main.7acaea2f.css.map",
+    "main.07d3183d.js.map": "/sports-cars/static/js/main.07d3183d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.07d3183d.js"
+  ]
+}
