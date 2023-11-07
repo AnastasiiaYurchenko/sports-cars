@@ -4,7 +4,7 @@ import './navListItem.css'
 const NavListItem = ({nav}) => {
   return (
       <li>
-          <a href="#">{nav.name}</a>
+          <a className={nav.active ? 'active' : undefined } href="#">{nav.name === "home" ? <i className="bi bi-house-door"></i> : nav.name}</a>
     </li>
   )
 }

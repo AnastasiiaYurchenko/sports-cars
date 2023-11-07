@@ -1,25 +1,25 @@
 const navListData = [
     {
         _id: 1,
-        linK: "/",
+        link: "/",
         name: "home",
         active: true
     },
     {
         _id: 2,
-        linK: "/vehicles",
+        link: "/vehicles",
         name: "Vehicles",
         active: false
     },
     {
         _id: 3,
-        linK: "/services",
+        link: "/services",
         name: "Services",
         active: false
     },
     {
         _id: 4,
-        linK: "/contact",
+        link: "/contact",
         name: "Contact",
         active: false
     },

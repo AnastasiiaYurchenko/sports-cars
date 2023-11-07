@@ -23,7 +23,7 @@ const Header = () => {
           {open ? <i className="bi bi-x-lg"></i> :  <i className="bi bi-list"></i>}
         </a>
       </div>
-      <ul className="nav">
+      <ul className={`nav ${open ? 'active' : undefined}`}>
         {navListData.map(nav => <NavListItem key={nav._id} nav={nav}/>)}
       </ul>
     </header>
