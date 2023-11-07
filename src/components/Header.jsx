@@ -11,20 +11,29 @@ const Header = () => {
     setOpen(!open)
   }
 
+  const handleNavOnClick = (id) => {
+    const newNavList = navList.map(nav => {
+      nav.active = false;
+      if (nav._id === id) nav.active = true;
+      return nav;
+    });
+    setNavList(newNavList);
+  }
+
   return (
     <header>
       <a href="/" className="logo">Vehicle</a>
       <div>
-        <a href="#" className="like">
+        <a href="/like" className="like">
           <i className="bi bi-heart-fill"></i>
           <span className="likeNumbers">0</span>
         </a>
-        <a href="#" className="menu" onClick={handleToggleMenu}>
+        <a href="/menu" className="menu" onClick={handleToggleMenu}>
           {open ? <i className="bi bi-x-lg"></i> :  <i className="bi bi-list"></i>}
         </a>
       </div>
       <ul className={`nav ${open ? 'active' : undefined}`}>
-        {navListData.map(nav => <NavListItem key={nav._id} nav={nav}/>)}
+        {navListData.map(nav => <NavListItem key={nav._id} nav={nav} navOnClick={handleNavOnClick}/>)}
       </ul>
     </header>
   )
