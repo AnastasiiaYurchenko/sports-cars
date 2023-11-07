@@ -24,11 +24,11 @@ const Header = () => {
     <header>
       <a href="/" className="logo">Vehicle</a>
       <div>
-        <a href="/like" className="like">
+        <a href="#" className="like">
           <i className="bi bi-heart-fill"></i>
           <span className="likeNumbers">0</span>
         </a>
-        <a href="/menu" className="menu" onClick={handleToggleMenu}>
+        <a href="#" className="menu" onClick={handleToggleMenu}>
           {open ? <i className="bi bi-x-lg"></i> :  <i className="bi bi-list"></i>}
         </a>
       </div>

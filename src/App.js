@@ -9,6 +9,7 @@ import React, {useState, useEffect} from 'react';
 import './App.css'
 import Banner from 'pages/Banner';
 import Header from 'components/Header';
+import { Route, Routes } from 'react-router-dom';
 
 export const AppContext = React.createContext();
 
@@ -31,8 +32,11 @@ export const App = () => {
   return (
     <>
       <AppContext.Provider value={{ data, setData }}>
-        <Header/>
-        <Banner/>
+        <Header />
+        <Routes>
+          <Route exact path="/" element={<Banner/>} />
+        </Routes>
+        
       </AppContext.Provider>
           </>
   );

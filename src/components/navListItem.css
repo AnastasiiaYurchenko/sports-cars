@@ -42,6 +42,6 @@
 }
 
 .nav li a:hover,
-.nav li a:active{
+.nav li a:active {
     color: var(--second);
 }
