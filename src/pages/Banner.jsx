@@ -39,6 +39,7 @@ const Banner = () => {
               <div className="col-lg-8 p-0 banner-top-right">
                 <div className="banner-img">
                   <img src={car.bannerImg} alt={car.make} className="img-fluid" />
+                  {/* <video src={car.video} autoPlay loop className="banner-video"></video> */}
                 </div>
                   </div>
                 </div>
