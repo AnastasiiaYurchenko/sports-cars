@@ -82,3 +82,15 @@ position: relative;
 .slide.active img{
     transform: scale(1);
 }
+
+.banner-video{
+    display: none;
+    height: 65vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.banner-video.active{
+    display: block;
+}
