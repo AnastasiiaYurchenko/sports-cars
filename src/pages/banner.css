@@ -94,3 +94,12 @@ position: relative;
 .banner-video.active{
     display: block;
 }
+
+.slide .banner-top .img.active{
+    display: block;
+}
+
+.slide .banner-top .img{
+    height: 65vh;
+    display: none;
+}
