@@ -95,11 +95,11 @@ position: relative;
     display: block;
 }
 
-.slide .banner-top .img.active{
+.slide .banner-top img.active{
     display: block;
 }
 
-.slide .banner-top .img{
+.slide .banner-top img{
     height: 65vh;
     display: none;
 }

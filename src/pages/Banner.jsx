@@ -43,7 +43,9 @@ const Banner = () => {
                   <video src={car.video} autoPlay loop muted className="banner-video"></video>
                   <div className="car-brief">
                     <div className="car-intro">
-                      <CircleBar/>
+                      <CircleBar name="Power" number={car.power} color="#f82249" />
+                      <CircleBar name="Engine" number={car.engine} color="#fe5d26" />
+                      <CircleBar name="New" number={car.new} color="#00df22"/>
                     </div>
                     <div className="car-nav"></div>
                   </div>
