@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/sports-cars/static/css/main.2c9e2991.css",
-    "main.js": "/sports-cars/static/js/main.0fd52ee5.js",
+    "main.css": "/sports-cars/static/css/main.0f200fda.css",
+    "main.js": "/sports-cars/static/js/main.6b24fdc6.js",
     "static/media/boxicons.svg": "/sports-cars/static/media/boxicons.9e2b21b135bc7d4c803f.svg",
     "static/media/boxicons.eot": "/sports-cars/static/media/boxicons.65a8ce52fc5427e8f94d.eot",
     "static/media/boxicons.woff": "/sports-cars/static/media/boxicons.d12afc36557395143e4b.woff",
@@ -10,11 +10,11 @@
     "static/media/bootstrap-icons.woff2?": "/sports-cars/static/media/bootstrap-icons.dea24bf5a7646d8b84e7.woff2",
     "static/media/boxicons.woff2": "/sports-cars/static/media/boxicons.df635aaf04cd75132f62.woff2",
     "index.html": "/sports-cars/index.html",
-    "main.2c9e2991.css.map": "/sports-cars/static/css/main.2c9e2991.css.map",
-    "main.0fd52ee5.js.map": "/sports-cars/static/js/main.0fd52ee5.js.map"
+    "main.0f200fda.css.map": "/sports-cars/static/css/main.0f200fda.css.map",
+    "main.6b24fdc6.js.map": "/sports-cars/static/js/main.6b24fdc6.js.map"
   },
   "entrypoints": [
-    "static/css/main.2c9e2991.css",
-    "static/js/main.0fd52ee5.js"
+    "static/css/main.0f200fda.css",
+    "static/js/main.6b24fdc6.js"
   ]
 }
