@@ -10,6 +10,11 @@ import './App.css'
 import Banner from 'pages/Banner';
 import Header from 'components/Header';
 import { Route, Routes } from 'react-router-dom';
+import Vehicles from 'pages/Vehicles';
+import VehicleDetails from 'pages/VehicleDetails';
+import Library from 'pages/Library';
+import Services from 'pages/Services';
+import Contact from 'pages/Contact';
 
 export const AppContext = React.createContext();
 
@@ -34,7 +39,12 @@ export const App = () => {
       <AppContext.Provider value={{ data, setData }}>
         <Header />
         <Routes>
-          <Route exact path="/" element={<Banner/>} />
+          <Route exact path="/" element={<Banner />} />
+          <Route exact path="/vehicles" element={<Vehicles />} />
+          <Route exact path="/vehicles/:id" element={<VehicleDetails />} />
+          <Route exact path="/library" element={<Library />} />
+          <Route exact path="/services" element={<Services />} />
+          <Route exact path="/contact" element={<Contact/>} />
         </Routes>
         
       </AppContext.Provider>
