@@ -1,11 +1,17 @@
-import React, { useContext} from 'react';
+import React, { useContext, useState} from 'react';
 import './banner.css';
 import { AppContext } from 'App';
 import SlideBtn from 'components/SlideBtn';
 import CircleBar from 'components/CircleBar';
+import { Link } from 'react-router-dom';
 
 const Banner = () => {
   const { data: cars, setData: setCars } = useContext(AppContext);
+  const [video, setVideo] = useState(false);
+
+  const toggleVideo = () => {
+    setVideo(!video);
+  }
 
   const handleSlideChange = (ind) => {
     if (ind >= 4) {
@@ -39,23 +45,53 @@ const Banner = () => {
                   </div>
               <div className="col-lg-8 p-0 banner-top-right">
                 <div className="banner-img">
-                  <img src={car.bannerImg} alt={car.make} className="img-fluid active" />
-                  <video src={car.video} autoPlay loop muted className="banner-video"></video>
+                  <img src={car.bannerImg} alt={car.make} className={`img-fluid ${video ? undefined : 'active'}`} />
+                  <video src={car.video} autoPlay loop muted className={`banner-video ${video ? 'active' : undefined}`}></video>
                   <div className="car-brief">
                     <div className="car-intro">
                       <CircleBar name="Power" number={car.power} color="#f82249" />
                       <CircleBar name="Engine" number={car.engine} color="#fe5d26" />
                       <CircleBar name="New" number={car.new} color="#00df22"/>
                     </div>
-                    <div className="car-nav"></div>
+                    <div className="car-nav">
+                      <li>
+                        <Link>
+                        Details <i className="bi bi-arrow-right-short"></i>
+                        </Link>
+                      </li>
+                        <li>
+                        <Link onClick={toggleVideo}>
+                        {video ? "Image" : "Video"} {" "} <i className="bi bi-arrow-right-short"></i>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link>
+                        More Vehicles <i className="bi bi-arrow-right-short"></i>
+                        </Link>
+                      </li>
+                    </div>
                   </div>
                 </div>
                   </div>
                 </div>
                 <div className="row banner-bottom">
-                  <div className="col-lg-4 p-0"></div>
-                  <div className="col-lg-5 p-0"></div>
-                  <div className="col-lg-3 p-0"></div>
+              <div className="col-lg-4 p-0">
+                <div className="banner-img">
+                  <img src={car.leftImg} alt={car.make} className='img-fluid'/>
+                </div>
+                  </div>
+              <div className="col-lg-5 p-0">
+                <div className="car-description">
+                  <h2>{car.title}</h2>
+                  <div className="car-features">
+                    <p>{car.description}</p>
+                    <Link to={`/vehicles/${car._id}`} className='detail-link text-center'>Explore <i className="bi bi-arrow-right-short"></i></Link>
+                  </div>
+                </div>
+                  </div>
+              <div className="col-lg-3 p-0">
+                <img src={car.rightImg} alt={car.make} className='img-fluid'/>
+                  </div>
                 </div>
 
               </div>
