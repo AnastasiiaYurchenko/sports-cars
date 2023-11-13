@@ -1,0 +1,27 @@
+.vehicle-details{
+    padding-bottom: 0;
+}
+
+.vehicle-details::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 33.33%;
+    height: 60vh;
+    background: var(--primary);
+}
+
+.details-left,
+.details-middle,
+.details-right{
+    position: relative;
+}
+
+.details-left{
+    position: relative;
+    height: 55vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}

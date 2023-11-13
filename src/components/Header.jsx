@@ -2,12 +2,13 @@ import React, { useState } from 'react'
 import './header.css'
 import navListData from '../data/navListData'
 import NavListItem from './NavListItem';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 
 const Header = () => {
   const [open, setOpen] = useState(false);
   const [navList, setNavList] = useState(navListData);
+  const location = useLocation();
 
   const handleToggleMenu = () => {
     setOpen(!open)
@@ -24,7 +25,7 @@ const Header = () => {
 
   return (
     <header>
-      <a href="/" className="logo">Vehicle</a>
+      <a href="/" className="logo" style={ location.pathname === '/' ? {color:'#000000'} : {color:'#ffffff'}}>Vehicle</a>
       <div>
         <Link to='/library' className="like">
           <i className="bi bi-heart-fill"></i>
