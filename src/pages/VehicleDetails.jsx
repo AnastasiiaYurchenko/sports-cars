@@ -63,7 +63,16 @@ const VehicleDetails = () => {
             <img src={car.leftImg} alt={car.make} className='img-fluid details-img-middle' />
           </div>
           <div className="col-lg-4 p-0 details-right
-          "></div>
+          ">
+            <img src={car.rightImg} alt={car.make} className='img-fluid details-img-right' />
+            <div className="d-flex gap-2">
+              <div className="icon-box">
+                <div className="icon">
+                  
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
      

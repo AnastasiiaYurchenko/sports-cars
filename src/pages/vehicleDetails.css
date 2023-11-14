@@ -107,7 +107,7 @@
     color: #484848;
 }
 
-.details-img-middle{
+.details-img-middle, .details-img-right{
     height: 30vh;
     width: 100%;
     object-fit: cover;
