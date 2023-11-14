@@ -26,6 +26,11 @@ const VehicleDetails = () => {
           <div className="col-lg-4 p-0 details-left
           ">
             <img src={car.bannerImg} alt={car.make} className="img-fluid details-img-left" />
+            <div className="price">
+              ${car.price && car.price.toLocaleString('en-US')}
+              <span>Drive Away</span>
+            </div>
+            <a href="" className="contact-seller"><i className="bi bi-telephone-fill"></i>Contact Dealer</a>
           </div>
           <div className="col-lg-4 p-0 details-middle
           "></div>
