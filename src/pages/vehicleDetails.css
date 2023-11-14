@@ -56,3 +56,60 @@
      align-items: center;
      gap: 10px;
 }
+
+.content{
+    padding: 20px;
+}
+
+.content h2{
+     font-family: 'Racing Sans One', cursive;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.details-box{
+    padding: 20px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 2px 0 35px 0 rgba(68, 88, 144, 0.12);
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+.details-box:hover{
+    box-shadow: 2px 0 40px 0 rgba(0, 0, 0, 0.2);
+}
+
+.details-box i{
+    display: block;
+    font-size: 36px;
+    color: var(--primary);
+    float: left;
+    line-height: 0;
+}
+
+.details-box span{
+    font-family: 'Racing Sans One', cursive;
+    font-size: 1.5rem;
+    line-height: 10px;
+    display: block;
+    font-weight: 500;
+    color: #222222;
+    margin-left: 50px;
+}
+
+.details-box p{
+    padding: 15px 0 0 0;
+    margin: 0 0 0 50px;
+    font-size: 14px;
+    color: #484848;
+}
+
+.details-img-middle{
+    height: 30vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}

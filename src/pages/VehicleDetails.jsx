@@ -33,7 +33,35 @@ const VehicleDetails = () => {
             <a href="" className="contact-seller"><i className="bi bi-telephone-fill"></i>Contact Dealer</a>
           </div>
           <div className="col-lg-4 p-0 details-middle
-          "></div>
+          ">
+            <div className="content">
+              <h2>Vehicle Details</h2>
+              <div className="details-box">
+                <i className="bi bi-emoji-smile"></i>
+                <span>Lorem ipsum dolor sit</span>
+                <p><strong>Lorem ipsum</strong>Lorem ipsum dolor sit amet consectetur</p>
+              </div>
+
+              <div className="details-box">
+                <i className="bi bi-emoji-smile"></i>
+                <span>Lorem ipsum dolor sit</span>
+                <p><strong>Lorem ipsum</strong>Lorem ipsum dolor sit amet consectetur</p>
+              </div>
+
+              <div className="details-box">
+                <i className="bi bi-emoji-smile"></i>
+                <span>Lorem ipsum dolor sit</span>
+                <p><strong>Lorem ipsum</strong>Lorem ipsum dolor sit amet consectetur</p>
+              </div>
+
+              <div className="details-box">
+                <i className="bi bi-emoji-smile"></i>
+                <span>Lorem ipsum dolor sit</span>
+                <p><strong>Lorem ipsum</strong>Lorem ipsum dolor sit amet consectetur</p>
+              </div>
+            </div>
+            <img src={car.leftImg} alt={car.make} className='img-fluid details-img-middle' />
+          </div>
           <div className="col-lg-4 p-0 details-right
           "></div>
         </div>
