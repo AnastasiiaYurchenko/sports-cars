@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import './vehicleDetails.css';
+import IconBox from 'components/IconBox';
 
 const VehicleDetails = () => {
   const [car, setCar] = useState({});
@@ -66,11 +67,17 @@ const VehicleDetails = () => {
           ">
             <img src={car.rightImg} alt={car.make} className='img-fluid details-img-right' />
             <div className="d-flex gap-2">
-              <div className="icon-box">
+              <IconBox icon="bx bx-tachometer" title="Lorem, ipsum" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, dolorum"/>
+              <IconBox icon="bx bx-world" title="Lorem, ipsum" />
+               {/* <div className="icon-box">
                 <div className="icon">
-                  
+                  <i className='bx bx-world'></i>
                 </div>
-              </div>
+                <h4 className="title">
+                  <a href="#">Lorem, ipsum.</a>
+                </h4>
+                <p className="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, dolorum</p>
+              </div> */}
             </div>
           </div>
         </div>
