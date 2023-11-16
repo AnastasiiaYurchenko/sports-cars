@@ -69,15 +69,10 @@ const VehicleDetails = () => {
             <div className="d-flex gap-2">
               <IconBox icon="bx bx-tachometer" title="Lorem, ipsum" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, dolorum"/>
               <IconBox icon="bx bx-world" title="Lorem, ipsum" />
-               {/* <div className="icon-box">
-                <div className="icon">
-                  <i className='bx bx-world'></i>
-                </div>
-                <h4 className="title">
-                  <a href="#">Lorem, ipsum.</a>
-                </h4>
-                <p className="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, dolorum</p>
-              </div> */}
+            </div>
+            <div className="details-description">
+              <h4>Description</h4>
+              <p>{car.description}</p>
             </div>
           </div>
         </div>
