@@ -14,6 +14,16 @@ const VehicleCard = ({car}) => {
           <Link to={`/vehicles/${car._id}`} >{car.title}</Link>
         </h3>
         <VehicleRating rating={car.rating} />
+        <p>{car.description.substring(0, 30)}...</p>
+        <span className="price">
+          ${car.price && car.price.toLocaleString('en-US')}
+        </span>
+        <div className="buttons">
+          <Link>
+            Like <i className="bi bi-heart-fill"></i></Link>
+          <Link to={`/vehicles/${car._id}`} className='details'>
+          Details <i className="bi bi-plus-lg"></i></Link>
+        </div>
       </div>
     </div>
   )
