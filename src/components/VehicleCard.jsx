@@ -29,7 +29,9 @@ const VehicleCard = ({ car }) => {
           ${car.price && car.price.toLocaleString('en-US')}
         </span>
         <div className="buttons">
-          <Link className='like'>
+          <Link className={`like ${library.includes(car) ? 'active' : undefined}`}
+          onClick={library.includes(car) ? () => handleRemoveFromLibrary(car) : () => handleAddLibrary(car)}
+          >
             Like <i className="bi bi-heart-fill"></i></Link>
           <Link to={`/vehicles/${car._id}`} className='details'>
           Details <i className="bi bi-plus-lg"></i></Link>

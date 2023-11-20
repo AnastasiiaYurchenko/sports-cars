@@ -83,7 +83,7 @@
 }
 
 .vehicle .buttons .like:hover,
-.vehicle .buttons .like:active{
+.vehicle .buttons .like.active{
     color: #f82249;
     background: #fff;
 }
