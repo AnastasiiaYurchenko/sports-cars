@@ -1,9 +1,19 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './vehicleCard.css';
 import { Link } from 'react-router-dom';
 import VehicleRating from './VehicleRating';
+import { AppContext } from 'App';
 
-const VehicleCard = ({car}) => {
+const VehicleCard = ({ car }) => {
+  const { library, setLibrary } = useContext(AppContext);
+
+  const handleAddLibrary = car => {
+    setLibrary([...library, car])
+  }
+
+  const handleRemoveFromLibrary = car => {
+    setLibrary(library.filter(item => item._id !== car._id))
+  }
   return (
     <div className='col-lg-4 col-md-6'>
       <div className="vehicle">
