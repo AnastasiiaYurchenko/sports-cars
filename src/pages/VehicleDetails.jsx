@@ -8,16 +8,28 @@ const VehicleDetails = () => {
   const { id } = useParams();
   const index = parseInt(id) - 1;
 
-    const fetchData = () => {
+  // const fetchData = () => {
+  //   fetch('http://localhost:3000/sports-cars/api/vehiclesData.json')
+  //     .then(res => res.json())
+  //     .then(data => setCar(data[index]))
+  //     .catch(e => console.log(e.message))
+  // };
+
+  //   useEffect(() => {
+  //   fetchData()
+  // }, [])
+
+  useEffect(() => {
+  const fetchData = () => {
     fetch('http://localhost:3000/sports-cars/api/vehiclesData.json')
       .then(res => res.json())
       .then(data => setCar(data[index]))
-    .catch(e => console.log(e.message))
-  }
+      .catch(e => console.log(e.message));
+  };
 
-    useEffect(() => {
-    fetchData()
-  }, [])
+  fetchData();
+}, [index]); 
+
 
   return (
     <div id='vehicle-details' className='page vehicle-details'>
