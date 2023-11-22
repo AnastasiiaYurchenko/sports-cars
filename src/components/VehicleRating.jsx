@@ -36,7 +36,7 @@ useEffect(() => {
 
 
   return (
-      <div className='stars'> { stars.map(star => (<i key={star} class="bi bi-star-fill"></i>))}</div>
+      <div className='stars'> { stars.map(star => (<i key={star} className="bi bi-star-fill"></i>))}</div>
   )
 }
 
