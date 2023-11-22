@@ -44,7 +44,7 @@
     font-size: 18px;
 }
 
-.vehicle-details .title a{
+.vehicle-details .title span{
     color: #111111;
 }
 
@@ -54,7 +54,7 @@
     margin-bottom: 0;
 }
 
-.vehicle-details .icon-box:hover .title a,
+.vehicle-details .icon-box:hover .title span,
 .vehicle-details .icon-box:hover .description{
     color: #fff;
 }

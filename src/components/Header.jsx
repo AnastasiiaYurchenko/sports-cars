@@ -27,7 +27,7 @@ const Header = () => {
 
   return (
     <header>
-      <a href="/" className="logo" style={ location.pathname === '/' ? {color:'#000000'} : {color:'#ffffff'}}>Vehicle</a>
+      <a href="/sports-cars" className="logo" style={ location.pathname === '/' ? {color:'#000000'} : {color:'#ffffff'}}>Vehicle</a>
       <div>
         <Link to='/library' className="like">
           <i className="bi bi-heart-fill"></i>
