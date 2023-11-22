@@ -7,7 +7,7 @@ import PageTitle from 'components/PageTitle';
 import VehicleCard from 'components/VehicleCard';
 
 const Vehicles = () => {
-  const { data: cars, setData: setCars } = useContext(AppContext);
+  const { data: cars } = useContext(AppContext);
 
   return (
     <div id='vehicles' className='page vehicles' >

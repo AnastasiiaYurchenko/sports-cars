@@ -31,7 +31,7 @@ const VehicleDetails = () => {
               ${car.price && car.price.toLocaleString('en-US')}
               <span>Drive Away</span>
             </div>
-            <a href="" className="contact-seller"><i className="bi bi-telephone-fill"></i>Contact Dealer</a>
+            <a href="tel:+1234567890" className="contact-seller"><i className="bi bi-telephone-fill"></i>Contact Dealer</a>
           </div>
           <div className="col-lg-4 p-0 details-middle
           ">
