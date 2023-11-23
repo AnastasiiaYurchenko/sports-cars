@@ -57,19 +57,14 @@
     justify-content: space-between;
 }
 
-.vehicle .buttons a{
-    color: #fff;
-    background: var(--primary);
-    padding: 5px 20px;
-    width: 50%;
-    text-align: center;
-    font-size: 1.3rem;
-    transition: 0.5s;
-}
-
 .vehicle .buttons .details{
     color: #fff;
     background: var(--primary);
+    padding: 5px 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.3rem;
+    transition: 0.5s;
 }
 
 .vehicle .buttons .details:hover{
@@ -78,13 +73,18 @@
 }
 
 .vehicle .buttons .like{
-    color: #fff;
-    background: #f82249;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff; 
+}
+
+.vehicle .buttons .like i{
+   font-size: 24px;
 }
 
 .vehicle .buttons .like:hover,
 .vehicle .buttons .like.active{
     color: #f82249;
-    background: #fff;
 }
 
