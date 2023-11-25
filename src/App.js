@@ -15,6 +15,7 @@ import VehicleDetails from 'pages/VehicleDetails';
 import Library from 'pages/Library';
 import Services from 'pages/Services';
 import Contact from 'pages/Contact';
+import vehicleData from './vehiclesData.json';
 
 export const AppContext = React.createContext();
 
@@ -22,11 +23,15 @@ export const App = () => {
   const [data, setData] = useState([]);
   const [library, setLibrary] = useState([]);
 
+  // const fetchData = () => {
+  //   fetch('http://localhost:3000/sports-cars/api/vehiclesData.json')
+  //     .then(res => res.json())
+  //     .then(data => setData(data))
+  //   .catch(e => console.log(e.message))
+  // }
+
   const fetchData = () => {
-    fetch('http://localhost:3000/sports-cars/api/vehiclesData.json')
-      .then(res => res.json())
-      .then(data => setData(data))
-    .catch(e => console.log(e.message))
+    setData(vehicleData); 
   }
 
   useEffect(() => {
@@ -34,6 +39,7 @@ export const App = () => {
    
   }, [])
   
+  console.log(vehicleData);
    console.log(data)
   return (
     <>
