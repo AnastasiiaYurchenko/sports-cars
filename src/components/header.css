@@ -42,7 +42,7 @@ header .like{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--third);
+    background: var(--primary);
     color: #ffffff;
     font-size: 2rem;
     transition: 0.5s;

@@ -33,7 +33,9 @@ const VehicleDetails = () => {
   
   useEffect(() => {
    setCar(vehicleData[index]);
-}, [index]);
+  }, [index]);
+  
+  console.log(car);
 
 
   return (

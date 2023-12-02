@@ -32,7 +32,7 @@ const Banner = () => {
   return (
       <div className='banner'>
       {cars && cars.length > 0 && cars.slice(0, 5).map((car, index) => {
-        console.log(car.bannerImg);
+        // console.log(car.bannerImg);
         return <div key={car._id} className={`slide ${car.active ? 'active' : undefined}`}>
               <div className="container-fluid">
                 <div className="row banner-top">
