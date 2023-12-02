@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import './vehicleDetails.css';
 import IconBox from 'components/IconBox';
+import vehicleData from '../../src/vehiclesData.json';
 
 const VehicleDetails = () => {
   const [car, setCar] = useState({});
@@ -19,16 +20,20 @@ const VehicleDetails = () => {
   //   fetchData()
   // }, [])
 
-  useEffect(() => {
-  const fetchData = () => {
-    fetch('http://localhost:3000/sports-cars/api/vehiclesData.json')
-      .then(res => res.json())
-      .then(data => setCar(data[index]))
-      .catch(e => console.log(e.message));
-  };
+  // useEffect(() => {
+  // const fetchData = () => {
+  //   fetch('http://localhost:3000/sports-cars/api/vehiclesData.json')
+  //     .then(res => res.json())
+  //     .then(data => setCar(data[index]))
+  //     .catch(e => console.log(e.message));
+  // };
 
-  fetchData();
-}, [index]); 
+  // fetchData();
+  // }, [index]); 
+  
+  useEffect(() => {
+   setCar(vehicleData[index]);
+}, [index]);
 
 
   return (
