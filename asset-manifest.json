@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/sports-cars/static/css/main.b0a8fd29.css",
+    "main.css": "/sports-cars/static/css/main.75bfc464.css",
     "main.js": "/sports-cars/static/js/main.e56286db.js",
     "static/media/boxicons.svg": "/sports-cars/static/media/boxicons.9e2b21b135bc7d4c803f.svg",
     "static/media/boxicons.eot": "/sports-cars/static/media/boxicons.65a8ce52fc5427e8f94d.eot",
@@ -11,11 +11,11 @@
     "static/media/boxicons.woff2": "/sports-cars/static/media/boxicons.df635aaf04cd75132f62.woff2",
     "static/media/mclaren-1.jpg": "/sports-cars/static/media/mclaren-1.4b91833c7a54ec799d98.jpg",
     "index.html": "/sports-cars/index.html",
-    "main.b0a8fd29.css.map": "/sports-cars/static/css/main.b0a8fd29.css.map",
+    "main.75bfc464.css.map": "/sports-cars/static/css/main.75bfc464.css.map",
     "main.e56286db.js.map": "/sports-cars/static/js/main.e56286db.js.map"
   },
   "entrypoints": [
-    "static/css/main.b0a8fd29.css",
+    "static/css/main.75bfc464.css",
     "static/js/main.e56286db.js"
   ]
 }
