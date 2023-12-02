@@ -8,9 +8,15 @@
  }
 
  :root{
-    --primary: #0eaccc;
+    /* --primary: #0eaccc; */
+    --primary: rgb(40, 137, 185);
+    /* --primary: rgb(40, 127, 185); */
+
+    /* rgb(11, 68, 205) */
+    /* rgb(52, 112, 255) */
     --second: #002f31;
-    --third: #00b7c1;
+    /* --third: #00b7c1; */
+    --third: rgb(40, 127, 185);
     --fourth: #f82249;
  }
 
