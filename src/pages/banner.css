@@ -1,8 +1,8 @@
 .banner{
     position: relative;
     width: 100%;
-    /* min-height: 100vh; */
-    min-height: calc(100vh - 68px);
+    min-height: 100vh;
+    /* min-height: calc(100vh - 68px); */
     padding: 0;
     transition: 0.5s;
     overflow-x: hidden;
