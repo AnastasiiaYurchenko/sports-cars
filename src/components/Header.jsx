@@ -30,7 +30,8 @@ const Header = () => {
   return (
     <header>
       <a href="/sports-cars" className="logo" style={location.pathname === '/' ? { color: '#000000' } : { color: '#ffffff' }}>Vehicle</a>
-            <Link to='/' className="like">
+      <nav className="wrapper-nav">
+        <Link to='/' className="like">
           Home
       </Link>
        <Link to='/vehicles' className="like">
@@ -40,14 +41,13 @@ const Header = () => {
           <i className="bi bi-heart-fill"></i>
           <span className="likeNumbers">{library.length}</span>
         </Link>
-      <div>
-  
+      </nav>
 
-      
+      {/* <div> */}
         {/* <span className="menu" onClick={handleToggleMenu}>
           {open ? <i className="bi bi-x-lg"></i> :  <i className="bi bi-list"></i>}
         </span> */}
-      </div>
+      {/* </div> */}
       {/* <ul className={`nav ${open ? 'active' : undefined}`}>
         {navListData.map(nav => <NavListItem key={nav._id} nav={nav} navOnClick={handleNavOnClick}/>)}
       </ul> */}
