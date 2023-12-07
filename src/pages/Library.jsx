@@ -13,7 +13,7 @@ const Library = () => {
       <img src={bgImg} alt='' className="img-fluid page-img" />
       <div className="container">
         <PageTitle
-          title='Vehicles Library' subtitle='Yere are your favourites' />
+          title='Vehicles Library' subtitle='Here are your favourites' />
         <div className="row">
           {
             cars && cars.length === 0 ? (

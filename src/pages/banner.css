@@ -156,10 +156,14 @@ flex-wrap: wrap;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 500;
+    color: #ffffff;
+    opacity: 0.8;
+    transition: opacity 250ms ease;
 }
 
 .slide .car-brief .car-nav li a:hover{
-    color: #ffffff;
+    /* color: var(--primary); */
+    opacity: 1;
 }
 
 .slide .banner-bottom img{

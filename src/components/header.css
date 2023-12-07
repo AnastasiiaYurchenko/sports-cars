@@ -54,10 +54,16 @@ header .like{
     gap: 10px;
     /* background: var(--primary); */
     color: #ffffff;
+    opacity: 0.8;
     font-size: 2rem;
     transition: 0.5s;
     cursor: pointer;
     z-index: 9000;
+    transition: opacity 250ms ease;
+}
+
+header .like:hover{
+    opacity: 1;
 }
 
 header .likeNumbers{

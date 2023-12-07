@@ -22,3 +22,7 @@
 .library .browse:hover{
     background: var(--second);
 }
+
+.library .row{
+    justify-content: center;
+}
