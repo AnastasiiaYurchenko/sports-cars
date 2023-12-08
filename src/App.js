@@ -40,7 +40,7 @@ export const App = () => {
   }, [])
   
   console.log(vehicleData);
-   console.log(data)
+  console.log(data)
   return (
     <>
       <AppContext.Provider value={{ data, setData, library, setLibrary }}>
