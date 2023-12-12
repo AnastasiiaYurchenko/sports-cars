@@ -47,7 +47,7 @@ const VehicleCard = ({ car }) => {
           >
            <i className="bi bi-heart-fill"></i></Link>
           <Link to={`/vehicles/${car._id}`} className='details'>
-          Learn more <i className="bi bi-plus-lg"></i></Link>
+          Learn more </Link>
         </div>
       </div>
     </div>
