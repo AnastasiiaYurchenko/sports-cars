@@ -2,7 +2,7 @@ import React, { useContext, useState} from 'react';
 import './banner.css';
 import { AppContext } from 'App';
 import SlideBtn from 'components/SlideBtn';
-import CircleBar from 'components/CircleBar';
+// import CircleBar from 'components/CircleBar';
 import { Link } from 'react-router-dom';
 
 const Banner = () => {
@@ -48,11 +48,11 @@ const Banner = () => {
                   <img src={car.bannerImg} alt={car.make} className={`img-fluid ${video ? undefined : 'active'}`} />
                   <video src={car.video} autoPlay loop muted className={`banner-video ${video ? 'active' : undefined}`}></video>
                   <div className="car-brief">
-                    <div className="car-intro">
+                    {/* <div className="car-intro">
                       <CircleBar name="Power" number={car.power} color="#f82249" />
                       <CircleBar name="Engine" number={car.engine} color="#fe5d26" />
                       <CircleBar name="New" number={car.new} color="#00df22"/>
-                    </div>
+                    </div> */}
                     <div className="car-nav">
                       <li>
                         <Link to={`/vehicles/${car._id}`}>
