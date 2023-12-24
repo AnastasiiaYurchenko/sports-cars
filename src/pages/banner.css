@@ -107,7 +107,7 @@ position: relative;
 
 .slide .car-brief{
 position: absolute;
-height: 120px;
+/* height: 120px; */
 width: 100%;
 left: 0;
 bottom: 0;
@@ -138,8 +138,9 @@ flex-wrap: wrap;
 
 .slide .car-brief .car-nav{
     position: relative;
-    width: 50%;
-    height: 120px;
+    /* width: 50%; */
+    width: 100%;
+    /* height: 120px; */
     background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(20px);
     list-style: none;
